@@ -22,10 +22,6 @@ let package = Package(
             exact: "0.1.14"
         ),
         .package(
-            url: "https://github.com/lukepistrol/SwiftLintPlugin",
-            from: "0.2.2"
-        ),
-        .package(
             url: "https://github.com/ChimeHQ/TextFormation",
             from: "0.6.7"
         )
@@ -39,7 +35,6 @@ let package = Package(
                 "TextFormation"
             ],
             plugins: [
-                .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
             ]
         ),
 
