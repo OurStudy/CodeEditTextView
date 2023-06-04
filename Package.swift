@@ -1,11 +1,11 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "CodeEditTextView",
-    platforms: [.macOS(.v13)],
+    platforms: [.macOS(.v12)],
     products: [
         .library(
             name: "CodeEditTextView",
@@ -14,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/krzyzanowskim/STTextView.git",
-            exact: "0.6.7"
+            url: "https://github.com/OurStudy/STTextView.git",
+            branch: "main"
         ),
         .package(
             url: "https://github.com/CodeEditApp/CodeEditLanguages.git",
