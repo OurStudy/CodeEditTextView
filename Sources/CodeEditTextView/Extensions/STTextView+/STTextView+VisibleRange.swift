@@ -56,7 +56,7 @@ extension STTextView {
             }
         }
 
-        guard let end else { return nil }
+        guard let end = end else { return nil }
 
         guard start.compare(end) != .orderedDescending else {
             return NSTextRange(location: end, end: start)?.nsRange(using: textContentStorage)

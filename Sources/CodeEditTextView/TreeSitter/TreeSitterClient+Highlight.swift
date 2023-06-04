@@ -16,7 +16,7 @@ extension TreeSitterClient {
         completion: @escaping (([HighlightRange]) -> Void)
     ) {
         stateLock.lock()
-        guard let textView, let state = state?.copy() else { return }
+        guard let textView = textView, let state = state?.copy() else { return }
         stateLock.unlock()
 
         var highlights: [HighlightRange] = []

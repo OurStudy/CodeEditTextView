@@ -38,7 +38,7 @@ extension TreeSitterClient {
     ///                        state object.
     ///   - runningAsync: Determine whether or not to timeout long running parse tasks.
     internal func applyEdit(editState: EditState, startAtLayerIndex: Int? = nil, runningAsync: Bool = false) {
-        guard let readBlock, let textView, let state else { return }
+        guard let readBlock = readBlock, let textView = textView, let state = state else { return }
         stateLock.lock()
 
         // Loop through all layers, apply edits & find changed byte ranges.

@@ -21,10 +21,10 @@
     {
       "identity" : "sttextview",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/krzyzanowskim/STTextView",
+      "location" : "https://github.com/OurStudy/STTextView.git",
       "state" : {
-        "revision" : "6c6243ae790247368aea258e4fb3642523759bec",
-        "version" : "0.5.3"
+        "branch" : "main",
+        "revision" : "dfb77789c35c552bd5fc023382d50c70f1750e58"
       }
     },
     {
